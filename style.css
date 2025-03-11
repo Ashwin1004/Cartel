@@ -1,0 +1,39 @@
+body {
+    background: url('/static/car_image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}

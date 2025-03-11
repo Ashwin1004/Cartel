@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CarTel - Geo Spatial Enhancement</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚗 CarTel</h1>
+        <form action="/query" method="post">
+            <input type="text" name="query" placeholder="Enter your SQL-like query..." required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="map"></div>
+    </div>
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 20.5937, lng: 78.9629 }, // Default: India Map
+                zoom: 5
+            });
+        }
+    </script>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>
